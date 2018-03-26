@@ -1,6 +1,8 @@
 
 public class Timer
 {
+	private int score;
+	private boolean scoring;
 	@Override
 	public void start(Stage primaryStage)
 	{
