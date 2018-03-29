@@ -1,3 +1,7 @@
+//Lab 4.3
+//Easy Mode
+// Cristina Chen and Joyin Wong
+
 package application;
 
 import javafx.animation.AnimationTimer;
@@ -43,7 +47,7 @@ public class Main extends Application
 		new AnimationTimer()
 		{
 			public void handle(long now)
-			{
+			{ 
 				if (now > timeStep)
 				{
 					timeStep = now + 10000000000L;
@@ -51,7 +55,7 @@ public class Main extends Application
 				}
 				if (!scoring)
 				{
-					btn.setText("Ten Second Cooldown");
+					btn.setText("Ten Second Cooldown...");
 					score = 0;
 				}
 				else
@@ -59,6 +63,7 @@ public class Main extends Application
 					btn.setText("Click Me!");
 				}			
 				txt.setText("Score: " + Integer.toString(score));
+				
 			}
 		}.start();
 			
